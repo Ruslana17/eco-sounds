@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 body{
-    margin:0%;
     background-color: rgb(133, 128, 128);
 }
 .header{
@@ -60,4 +61,20 @@ background-color: black;
     background-color: transparent;
     border: 0px;
     transition: .3s;
+}
+.footer{
+    background-color: #000;
+}
+.footer_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+.footer_information{
+
 }
