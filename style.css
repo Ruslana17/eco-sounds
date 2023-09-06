@@ -37,3 +37,24 @@ background-color: black;
 .list_birds_name:hover{
     color: rgb(136, 128, 128);
 }
+.main_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 120px);
+    min-height: 280px;
+    background: url('img/forest.jpg'), center no-repeat;
+    background-size: cover;
+
+}
+.main_button{
+    width: 160px;
+    height: 160px;
+    background-image: url('img/play.svg');
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: 0px;
+    transition: .3s;
+}
