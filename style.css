@@ -34,7 +34,7 @@ background-color: black;
     width: auto;
     list-style-type: none;
     color: white;
-    font-size: 2vw;
+    font-size: 1.7vw;
     margin-right: 3vw;
     cursor: pointer;
 }
@@ -79,8 +79,9 @@ background-color: black;
     display: flex;
     align-items: center;
 }
-.footer_information>p{
+.footer_information > p{
     padding-right: 20px;
+    color: #fff;
 }
 .rss{
     width: 135px;
@@ -88,5 +89,11 @@ background-color: black;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('img/rss.svg');
+    transition: .3s;
+}
+.github_link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
     transition: .3s;
 }
