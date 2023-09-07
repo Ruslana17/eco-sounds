@@ -17,9 +17,10 @@ background-color: black;
 }
 
 #logo{
-    width: 4vw;
-    height: 4vw;
+    width: 3.8vw;
+    height: 3.8vw;
     margin:0% 1% 0%;
+  
 }
 .list_birds{
     display: flex;
