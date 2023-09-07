@@ -56,12 +56,15 @@ background-color: black;
 .main_button_play{
     width: 160px;
     height: 160px;
-    background-image: url('img/play.svg');
-    background-position: center;
-    background-size: contain;
+   /* background-image: url('img/play.svg');*/
     background-color: transparent;
     border: 0px;
     transition: .3s;
+    cursor: pointer;
+}
+#main_button_play_svg:hover{
+    fill: #a39978;
+    cursor: pointer;
 }
 .footer{
     background-color: #000;
@@ -73,7 +76,7 @@ background-color: black;
     width: calc(100% - 40px);
     max-width: 1440px;
     margin: 0 auto;
-    padding: 5px 20px;
+    padding: 6px 20px;
     font-size: 20px;
 }
 .footer_information{
