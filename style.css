@@ -97,3 +97,6 @@ background-color: black;
     padding: 0 20px;
     transition: .3s;
 }
+.github_link:hover{
+    color: rgb(136, 128, 128);
+}
