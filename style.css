@@ -43,7 +43,7 @@ background-color: black;
     cursor: pointer;
 }
 .list_birds_name:hover{
-    color: rgb(136, 128, 128);
+    color: #a39978;
 }
 .main_block{
     display: flex;
@@ -95,8 +95,11 @@ background-color: black;
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('img/rss.svg');
     transition: .3s;
+
+}
+.rss:hover{
+    fill: #a39978;
 }
 .github_link{
     color: #fff;
@@ -105,5 +108,5 @@ background-color: black;
     transition: .3s;
 }
 .github_link:hover{
-    color: rgb(136, 128, 128);
+    color: #a39978;
 }
