@@ -6,9 +6,7 @@
 #no-active{
     display: none;
 }
-body{
-    background-color: rgb(133, 128, 128);
-}
+
 .header{
 width: 100%;
 /*height: 4.3vw;*/
