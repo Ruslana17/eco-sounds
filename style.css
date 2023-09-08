@@ -11,24 +11,29 @@ body{
 }
 .header{
 width: 100%;
-height: 4.7vw;
+/*height: 4.3vw;*/
 background-color: black;
 }
+
 #header_span{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 #logo{
     width: 3.8vw;
     height: 3.8vw;
-    margin:0% 1% 0%;
-  
+   /* margin:0% 1% 0%;*/
+    fill: #a39978;
+}
+#logo:hover{
+    fill:#fff;
+    cursor: pointer;
 }
 .list_birds{
     display: flex;
      width: 80vw;
-     height: 5vw;
    
     align-items: center;
     justify-content: flex-end;
@@ -38,7 +43,7 @@ background-color: black;
     width: auto;
     list-style-type: none;
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     margin-right: 3vw;
     cursor: pointer;
 }
