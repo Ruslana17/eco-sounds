@@ -15,37 +15,37 @@ soundElements.forEach((element) => {
         if (audioElement.paused) {
             audioElement.play();
             element.classList.add('playing');
+            toggleButtons();
         } else {
             audioElement.pause();
             audioElement.currentTime = 0;
             element.classList.remove('playing');
+            toggleButtons();
         }
     });
 });
 
+function toggleButtons() {
+    isPlaying = !isPlaying;
+    if (isPlaying) {
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'block';
+    } else {
+        playButton.style.display = 'block';
+        pauseButton.style.display = 'none';
+    }
+}
+
 playButton.addEventListener('click', () => {
     const audioElements = document.querySelectorAll('audio');
 
-    if (!isPlaying) {
-        audioElements.forEach((audioElement) => {
-            audioElement.play();
-        });
-        playIcon.src ='img/pause.svg';
-        playButton.classList.remove('play');
-        playButton.classList.add('pause');
-        pauseButton.style.display = 'block';
-    } else {
-        audioElements.forEach((audioElement) => {
-            audioElement.pause();
-            audioElement.currentTime = 0;
-        });
-        playIcon.src ='img/play.svg';
-        playButton.classList.remove('pause');
-        playButton.classList.add('play');
-        pauseButton.style.display = 'none';
-    }
+    audioElements.forEach((audioElement) => {
+        audioElement.play();
+    });
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'block';
 
-    isPlaying = !isPlaying;
+    isPlaying = true;
 });
 
 pauseButton.addEventListener('click', () => {
@@ -55,15 +55,8 @@ pauseButton.addEventListener('click', () => {
         audioElement.pause();
         audioElement.currentTime = 0;
     });
-    pauseIcon.src = 'img/pause.svg';
-    playButton.classList.remove('pause');
-    pauseButton.classList.add('play');
-    playButton.style.display = 'none';
+    playButton.style.display = 'block';
+    pauseButton.style.display = 'none';
 
     isPlaying = false;
 });
-
-
-
-
-
